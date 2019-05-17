@@ -9,6 +9,8 @@ _handlers = []
 
 # TODO: Chage to unique values 
 COMMAND_ID = "commandId"
+COMMAND_NAME = "Human readable Name"
+COMMAND_TOOLTIP = "Short descripting"
 
 # TODO: Place command in correct location(s). See toolbarPanelNames.txt for panel names    
 TOOLBAR_PANELS = ["SolidModifyPanel", "SolidCreatePanel"]
@@ -123,9 +125,8 @@ class CommandDestroyHandler(adsk.core.CommandEventHandler):
         super().__init__()
     def notify(self, args):
         try:
-            # When the command is done, terminate the script
-            # This will release all globals which will remove all event handlers
-            adsk.terminate()
+            # TODO: Add Destroy stuff
+            pass
         except:
             print(traceback.format_exc())
 
@@ -142,8 +143,8 @@ def run(context):
         #check the command exists or not
         cmdDef = commandDefinitions.itemById(COMMAND_ID)
         if not cmdDef:
-            cmdDef = commandDefinitions.addButtonDefinition(COMMAND_ID, COMMAND_ID,
-                                                            COMMAND_ID, '')
+            cmdDef = commandDefinitions.addButtonDefinition(COMMAND_ID, COMMAND_NAME,
+                                                            COMMAND_TOOLTIP, '')
         #Adds the commandDefinition to the toolbar
         for panel in TOOLBAR_PANELS:
             ui.allToolbarPanels.itemById(panel).controls.addCommand(cmdDef)
