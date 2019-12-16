@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"Nico Schlüter",
+	"description":	{
+		"":	"An example of none feature-based modeling using Python for speed and freedom"
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
