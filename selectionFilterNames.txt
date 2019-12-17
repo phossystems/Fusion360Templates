@@ -1,0 +1,38 @@
+Bodies
+	SolidBodies
+	SurfaceBodies
+	MeshBodies
+Faces
+	SolidFaces
+	SurfaceFaces
+	PlanarFaces
+	CylindricalFaces
+	ConicalFaces
+	SphericalFaces
+	ToroidalFaces
+	SplineFaces	
+Edges
+	LinearEdges
+	CircularEdges
+	EllipticalEdges
+	TangentEdges
+	NonTangentEdges
+Vertices
+RootComponents
+Occurrences
+Sketches
+SketchConstraints
+Profiles
+Texts
+SketchCurves
+	SketchLines
+	SketchCircles
+SketchPoints
+ConstructionPoints
+ConstructionLines
+ConstructionPlanes
+Features
+Canvases
+Decals
+JointOrigins
+Joints
